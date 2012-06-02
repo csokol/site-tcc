@@ -27,172 +27,172 @@
                 </div>
             </div>    
             
-            <div class="page-header">
-                <h2>Proposta</h2>
-            </div>
-            <div class="article">
-                <table>
-                    <tr>
-                        <th>Aluno: </th>
-                        <td>Francisco Zigmund Sokol</td>
-                    </tr>
-                    <tr>
-                        <th>Orientador: </th>
-                        <td>Marco Aurélio Georsa</td>
-                    </tr>
-                    <tr>
-                        <th>Co-orientador: </th>
-                        <td>Maurício Fivaro Aniche</td>
-                    </tr>
-                    <tr>
-                        <th>Tema: </th>
-                        <td>MetricMiner: uma ferramenta web de apoio à mineração de repositórios de software</td>
-                    </tr>
-                </table>
-                <h3>Resumo</h3>
-                <hr />
-                <p>
-                    Mineração de repositórios é uma área da Engenharia de Software que estuda o processo de evolução 
-                    de um software de forma empírica, por meio da análise dos artefatos envolvidos no seu desenvolvimento
-                    como código fonte, dados do sistema de controle de versão e sistemas de rastreamento de bugs <a href="#ref-1">[1]</a>.
-                    Para desenvolver um trabalho na área, o pesquisador é obrigado a carregar diversos projetos em sua estação de
-                    trabalho e realizar uma série de cálculos sobre o código dos projetos e sobre os metadados de seu 
-                    repositório. Esse processo requer a instalação de diversas ferramentas e bibliotecas 
-                    localmente para reaproveitar as ferramentas desenvolvidas nessa área, tornando o processo trabalhoso e demorado.
-                </p>
-                <p >
-                    Além de ser um processo complexo, esse tipo de pesquisa consome muitos recursos 
-                    computacionais. Baixar os repositórios a serem minerados consome um 
-                    volume considerável de banda. Depois, os dados devem ser processados e 
-                    persistidos em um banco de dados, ocupando um grande volume de disco.
-                    Só então o pesquisador pode calcular métricas sobre esses dados, além de 
-                    extrair relações entre os metadados do histórico do sistema de controle de versão,
-                    gastando uma quantidade grande de processamento de CPU. Só depois de passar por todas
-                    essas etapas, é possível extrair dados e avaliar hipóteses por meio de análises estatísticas.
-                </p>
-                <p >
-                    Dessas dificuldades surgiu a motivação para o desenvolvimento do MetricMiner,
-                    uma aplicação web que realiza todas as etapas da mineração de um repositório
-                    de software. Essa ferramenta irá disponibilizar um grande volume de dados já processados
-                    prontos para serem extraídos e analisados pelo pesquisador, poupando tempo e recursos computacionais.
-                </p>  
-                
-                <h3 >Objetivos</h3>
-                <hr  />
-                <p >
-                    O objetivo do trabalho é desenvolver uma aplicação web capaz de realizar as etapas
-                    custosas da mineração de um repositório de software, permitindo que pesquisadores 
-                    realizem estudos em diversos projetos.
-                </p>
-                
-                <h3 >Atividades já realizadas</h3>
-                <hr  />
-                <p >
-                    As ferramentas disponíveis foram analisadas e os requisitos para o desenvolvimento do MetricMiner foram levantados.
-                    O desenvolvimento da aplicação se iniciou com base no <a href="http://github.com/mauricioaniche/rEvolution">rEvolution</a>, 
-                    uma ferramenta de linha de comando desenvolvida por Mauricio Aniche. Foi criado 
-                    um <a href="http://github.com/metricminer/metricminer"> repositório</a> público no GitHub, onde o desenvolvimento do 
-                    software pode ser acompanhado. Foi configurado um <a href="http://metricminer.org.br/">servidor</a>
-                    para hospedar a aplicação. Também foi ecrito um artigo sobre o sistema que foi submetido à sessão de 
-                    ferramentas do CBSoft 2012.
-                </p>
-                <p >
-                    As principais funcionalidades implementadas até o momento foram:
-                    <ul class="spaced" style="top: -20px; position: relative;">
-                        <li>Download de repositórios que utilizam o sistema de controle de versão Git.</li>
-                        <li>Extração dos dados do sistema de controle de versão dos projetos cadastrados.</li>
-                        <li>Cálculo de algumas métricas de software como LCOM e Complexidade Ciclomática.</li>
-                        <li>Interface para realização de consultas aos dados armazenados no sistema.</li>
-                    </ul>
-                </p>
-                
-                <h3 >Cronograma</h3>
-                <hr  />
-                <table id="cronograma">
-                    <tr>
-                        <th></th>
-                        <th>Junho</th>
-                        <th>Julho</th>
-                        <th>Agosto</th>
-                        <th>Setembro</th>
-                        <th>Outubro</th>
-                        <th>Novembro</th>
-                        <th>Dezembro</th>
-                    </tr>
-                    <tr>
-                        <th class="atv">Desenvolvimento</th>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th class="atv">Validação da ferramenta</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th class="atv">Monografia</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <th class="atv">Pôster/Apresentação</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                    </tr>
-                </table>
-                
-                <h3 >Estrutura da monografia</h3>
-                <hr />
-                <h4>Parte objetiva</h4>
-                <ol class="spaced">
-                    <li>Introdução <span>- introdução ao tema e motivação para o desenvolvimento da ferramenta.</span></li>
-                    <li>Mineração de Repositórios de Software <span>- levantamento bibliográfico sobre essa área de pesquisa.</span></li>
-                    <li>Arquitetura da ferramenta e tecnologias envolvidas <span>- discussão das decisões arquiteturais do sistema.</span></li>
-                    <li>Avaliação da ferramenta <span>- resultados obtidos com a utilização do software produzido</span></li>
-                    <li>Conclusão e trabalhos futuros</li>
-                </ol>
-                <h4>Parte subjetiva</h4>
-                <ol class="spaced">
-                    <li>Desafios e frustrações encontrados</li>
-                    <li>Disciplinas relevantes para a realização do trabalho</li>
-                </ol>
-                <h3 >Referências</h3>
-                <hr />
-                <p class="spaced">
-                    <ol>
-                        <li id="ref-1">
-                            <span>
-                                Kagdi, H., Collard, M. L., and Maletic, J. I. (2007). A survey and taxonomy of approaches
-                                for mining software repositories in the context of software evolution. <i>Journal of Software 
-                                Maintenance and Evolution</i>, 19(2):77–131.
-                            </span>
-                        </li>
+            <div class="conteudo">
+                <div class="page-header">
+                    <h2>Proposta</h2>
+                </div>
+                <div class="article">
+                    <table>
+                        <tr>
+                            <th>Aluno: </th>
+                            <td>Francisco Zigmund Sokol</td>
+                        </tr>
+                        <tr>
+                            <th>Orientador: </th>
+                            <td>Marco Aurélio Georsa</td>
+                        </tr>
+                        <tr>
+                            <th>Co-orientador: </th>
+                            <td>Maurício Fivaro Aniche</td>
+                        </tr>
+                        <tr>
+                            <th>Tema: </th>
+                            <td>MetricMiner: uma ferramenta web de apoio à mineração de repositórios de software</td>
+                        </tr>
+                    </table>
+                    <h3>Resumo</h3>
+                    <hr />
+                    <p>
+                        Mineração de repositórios é uma área da Engenharia de Software que estuda o processo de evolução 
+                        de um software de forma empírica, por meio da análise dos artefatos envolvidos no seu desenvolvimento
+                        como código fonte, dados do sistema de controle de versão e sistemas de rastreamento de bugs <a href="#ref-1">[1]</a>.
+                        Para desenvolver um trabalho na área, o pesquisador é obrigado a carregar diversos projetos em sua estação de
+                        trabalho e realizar uma série de cálculos sobre o código dos projetos e sobre os metadados de seu 
+                        repositório. Esse processo requer a instalação de diversas ferramentas e bibliotecas 
+                        localmente para reaproveitar as ferramentas desenvolvidas nessa área, tornando o processo trabalhoso e demorado.
+                    </p>
+                    <p >
+                        Além de ser um processo complexo, esse tipo de pesquisa consome muitos recursos 
+                        computacionais. Baixar os repositórios a serem minerados consome um 
+                        volume considerável de banda. Depois, os dados devem ser processados e 
+                        persistidos em um banco de dados, ocupando um grande volume de disco.
+                        Só então o pesquisador pode calcular métricas sobre esses dados, além de 
+                        extrair relações entre os metadados do histórico do sistema de controle de versão,
+                        gastando uma quantidade grande de processamento de CPU. Só depois de passar por todas
+                        essas etapas, é possível extrair dados e avaliar hipóteses por meio de análises estatísticas.
+                    </p>
+                    <p >
+                        Dessas dificuldades surgiu a motivação para o desenvolvimento do MetricMiner,
+                        uma aplicação web que realiza todas as etapas da mineração de um repositório
+                        de software. Essa ferramenta irá disponibilizar um grande volume de dados já processados
+                        prontos para serem extraídos e analisados pelo pesquisador, poupando tempo e recursos computacionais.
+                    </p>  
+                    
+                    <h3 >Objetivos</h3>
+                    <hr  />
+                    <p >
+                        O objetivo do trabalho é desenvolver uma aplicação web capaz de realizar as etapas
+                        custosas da mineração de um repositório de software, permitindo que pesquisadores 
+                        realizem estudos em diversos projetos.
+                    </p>
+                    
+                    <h3 >Atividades já realizadas</h3>
+                    <hr  />
+                    <p >
+                        As ferramentas disponíveis foram analisadas e os requisitos para o desenvolvimento do MetricMiner foram levantados.
+                        O desenvolvimento da aplicação se iniciou com base no <a href="http://github.com/mauricioaniche/rEvolution">rEvolution</a>, 
+                        uma ferramenta de linha de comando desenvolvida por Mauricio Aniche. Foi criado 
+                        um <a href="http://github.com/metricminer/metricminer"> repositório</a> público no GitHub, onde o desenvolvimento do 
+                        software pode ser acompanhado. Foi configurado um <a href="http://metricminer.org.br/">servidor</a>
+                        para hospedar a aplicação. Também foi ecrito um artigo sobre o sistema que foi submetido à sessão de 
+                        ferramentas do CBSoft 2012.
+                    </p>
+                    <p >
+                        As principais funcionalidades implementadas até o momento foram:
+                        <ul class="spaced" style="top: -20px; position: relative;">
+                            <li>Download de repositórios que utilizam o sistema de controle de versão Git.</li>
+                            <li>Extração dos dados do sistema de controle de versão dos projetos cadastrados.</li>
+                            <li>Cálculo de algumas métricas de software como LCOM e Complexidade Ciclomática.</li>
+                            <li>Interface para realização de consultas aos dados armazenados no sistema.</li>
+                        </ul>
+                    </p>
+                    
+                    <h3 >Cronograma</h3>
+                    <hr  />
+                    <table id="cronograma">
+                        <tr>
+                            <th></th>
+                            <th>Junho</th>
+                            <th>Julho</th>
+                            <th>Agosto</th>
+                            <th>Setembro</th>
+                            <th>Outubro</th>
+                            <th>Novembro</th>
+                            <th>Dezembro</th>
+                        </tr>
+                        <tr>
+                            <th class="atv">Desenvolvimento</th>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="atv">Validação da ferramenta</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="atv">Monografia</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <th class="atv">Pôster/Apresentação</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    
+                    <h3 >Estrutura da monografia</h3>
+                    <hr />
+                    <h4>Parte objetiva</h4>
+                    <ol class="spaced">
+                        <li>Introdução <span>- introdução ao tema e motivação para o desenvolvimento da ferramenta.</span></li>
+                        <li>Mineração de Repositórios de Software <span>- levantamento bibliográfico sobre essa área de pesquisa.</span></li>
+                        <li>Arquitetura da ferramenta e tecnologias envolvidas <span>- discussão das decisões arquiteturais do sistema.</span></li>
+                        <li>Avaliação da ferramenta <span>- resultados obtidos com a utilização do software produzido</span></li>
+                        <li>Conclusão e trabalhos futuros</li>
                     </ol>
-                </p>
+                    <h4>Parte subjetiva</h4>
+                    <ol class="spaced">
+                        <li>Desafios e frustrações encontrados</li>
+                        <li>Disciplinas relevantes para a realização do trabalho</li>
+                    </ol>
+                    <h3 >Referências</h3>
+                    <hr />
+                    <p class="spaced">
+                        <ol>
+                            <li id="ref-1">
+                                <span>
+                                    Kagdi, H., Collard, M. L., and Maletic, J. I. (2007). A survey and taxonomy of approaches
+                                    for mining software repositories in the context of software evolution. <i>Journal of Software 
+                                    Maintenance and Evolution</i>, 19(2):77–131.
+                                </span>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
             </div>
         </div>
     </body>
     
 </html>
-
-            <div>
