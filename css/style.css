@@ -5,30 +5,30 @@ p {
     margin-bottom: 20px;
 }
 
-ol.spaced li {
+ol.spaced li, ul.spaced li {
     line-height: 30px;
     margin-left:30px;
 }
-ol.article li {
+div.article ol li {
     font-weight: bold;
 }
 
-ol.article li span {
+div.article ol li span {
     line-height: 30px;
     font-weight: normal;
 }
 
-hr.article {
+div.article hr.article {
     margin: 0 0 5px 0;
 }
 
-table.article th {
+div.article table th {
     text-align: right;
     margin-right: 5px;
     padding:3px;
 }
 
-h3.article {
+div.article h3 {
     margin-top: 20px;
 }
 
