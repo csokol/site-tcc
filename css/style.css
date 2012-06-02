@@ -1,14 +1,16 @@
-p.article {
+p {
     text-indent: 20px;
     text-align: justify;
     line-height: 25px;
     margin-bottom: 20px;
 }
 
-ol.article li {
+ol.spaced li {
     line-height: 30px;
-    font-weight: bold;
     margin-left:30px;
+}
+ol.article li {
+    font-weight: bold;
 }
 
 ol.article li span {
