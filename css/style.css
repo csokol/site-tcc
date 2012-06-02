@@ -1,0 +1,49 @@
+p.article {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+ol.article li {
+    line-height: 30px;
+    font-weight: bold;
+    margin-left:30px;
+}
+
+ol.article li span {
+    line-height: 30px;
+    font-weight: normal;
+}
+
+hr.article {
+    margin: 0 0 5px 0;
+}
+
+table.article th {
+    text-align: right;
+    margin-right: 5px;
+    padding:3px;
+}
+
+h3.article {
+    margin-top: 20px;
+}
+
+#cronograma, #cronograma th, #cronograma td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#cronograma th, #cronograma td  {
+    width: 115px;
+    height: 3.5em;
+}
+
+#cronograma td  {
+    text-align: center;
+}
+
+#cronograma {
+    margin:auto;
+}

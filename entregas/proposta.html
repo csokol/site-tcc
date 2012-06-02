@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <script src="../js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <title>MAC499 - Trabalho de conclusão de curso - Francisco Sokol</title>
     </head>
     
@@ -13,7 +14,7 @@
                 <div class="navbar-inner">
                     <div class="container">
                         <a class="brand" href="../index.html">
-                            MAC499 - Francisco Sokol
+                            MAC499 - Trabalho de Formatura Supervisionado
                         </a>
                         <ul class="nav">
                             <li><a href="avaliacoes.html">Avaliação das monografias</a></li>
@@ -29,9 +30,135 @@
             <div class="page-header">
                 <h2>Proposta</h2>
             </div>
-            <p>
-                <strong>A ser entregue no dia 4 de junho de 2012.</strong>
+            
+            <table class="article">
+                <tr>
+                    <th>Aluno: </th>
+                    <td>Francisco Zigmund Sokol</td>
+                </tr>
+                <tr>
+                    <th>Orientador: </th>
+                    <td>Marco Aurélio Georsa</td>
+                </tr>
+                <tr>
+                    <th>Co-orientador: </th>
+                    <td>Maurício Fivaro Aniche</td>
+                </tr>
+                <tr>
+                    <th>Tema: </th>
+                    <td>MetricMiner: uma ferramenta web de apoio à mineração de repositórios de software</td>
+                </tr>
+            </table>
+            <h3 class="article">Resumo</h3>
+            <hr class="article" />
+            <p class="article">
+                Mineração de repositórios é uma área da Engenharia de Software que estuda o processo de evolução 
+                de um software de forma empírica, por meio da análise dos artefatos envolvidos no seu desenvolvimento
+                como código fonte, dados do sistema de controle de versão e bug tracking systems (survey que o Gustavo passou).
+                Para desenvolver uma pesquisa na área, o pesquisador é obrigado a baixar diversos projetos em sua estação de
+                trabalho e realizar uma série de cálculos sobre o código dos projetos e sobre os metadados de seu 
+                repositório. Esse processo requer a instalação de diversas ferramentas e bibliotecas 
+                localmente para reaproveitar as ferramentas desenvolvidas nessa área, tornando o processo trabalhoso e demorado.
             </p>
+            <p class="article">
+                Além de ser um processo complexo, esse tipo de pesquisa consome muitos recursos 
+                computacionais. Baixar os repositórios a serem minerados consome um 
+                volume considerável de banda. Depois, os dados devem ser processados e 
+                persistidos em um banco de dados, ocupando um grande volume de disco.
+                Só então o pesquisador pode calcular métricas sobre esses dados, além de 
+                extrair relações entre os metadados do histórico do sistema de controle de versão,
+                gastando uma quantidade grande de processamento de CPU. Só depois de passar por todas
+                essas etapas, é possível extrair dados e avaliar hipóteses por meio de análises estatísticas.
+            </p>
+            <p class="article">
+                Dessas dificuldades surgiu a motivação para o desenvolvimento do MetricMiner,
+                uma aplicação web que realiza todas as etapas da mineração de um repositório
+                de software.
+            </p>  
+            
+            <h3 class="article">Objetivos</h3>
+            <hr class="article" />
+            <p class="article">
+                O objetivo do trabalho é desenvolver uma aplicação web capaz de realizar as etapas
+                custosas da mineração de um repositório de software.
+            </p>
+            
+            <h3 class="article">Atividades já realizadas</h3>
+            <hr class="article" />
+            <p class="article">
+                As ferramentas disponíveis foram analisadas e os requisitos para o desenvolvimento do MetricMiner foram levantados.
+                O desenvolvimento da aplicação se iniciou com base no <a href="http://github.com/mauricioaniche/rEvolution">rEvolution</a>, 
+                uma ferramenta de linha de comando desenvolvida por Mauricio Aniche. Foi criado um <a href="http://github.com/metricminer/metricminer">
+                repositório</a> público no GitHub, onde o desenvolvimento do software pode ser acompanhado. As principais 
+                funcionalidades do sistema já foram desenvolvidas, desde a cópia de um repositório de código fonte de um projeto, 
+                até a implementação diversas métricas de código. Foi configurado um <a href="http://metricminer.org.br/">servidor</a> 
+                para hospedar a aplicação.
+            </p>
+            
+            <h3 class="article">Cronograma</h3>
+            <hr class="article" />
+            <table id="cronograma">
+                <tr>
+                    <th></th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th>
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+                <tr>
+                    <th class="atv">Desenvolvimento</th>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="atv">Validação da ferramenta</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="atv">Monografia</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <th class="atv">Pôster/Apresentação</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <h3 class="article">Estrutura da monografia</h3>
+            <hr class="article" />
+            <ol class="article">
+                <li><span>Introdução</span></li>
+                <li><span>Mineração de Repositórios de Software</span></li>
+                <li><span>Arquitetura da ferramenta e tecnologias envolvidas</span></li>
+                <li><span>Avaliação da ferramenta</span></li>
+                <li><span>Conclusão e trabalhos futuros</span></li>
+            </ol>
         </div>
     </body>
     
