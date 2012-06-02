@@ -42,8 +42,12 @@ div.article h3 {
     height: 3.5em;
 }
 
-#cronograma td  {
+#cronograma td, #cronograma th {
     text-align: center;
+}
+
+#cronograma th.atv {
+    text-align: right;
 }
 
 #cronograma {
